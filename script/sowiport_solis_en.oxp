@@ -1,0 +1,15 @@
+doc('http://sowiport.gesis.org/')
+  /descendant::field()[2]/{click /}
+    //div[@id='facets']//a[contains(.,'SOLIS')]/{click /}
+    //*[@id='limit']/option[contains(., '100')]/{click /}
+    /(//*[contains(@title, 'next')]/{click /})*{0,1}
+      //*[contains(@class,'record')]:<record>
+        [.//a[@class~='title'][./b:<title=normalize-space(.)>]/{click /}
+          /.
+          [? .//*[@id='detailed_view_metadata']//table//td
+            [ ./preceding-sibling::td[contains(.,'Editor:')]]//a
+              :<editor=normalize-space(.)>]
+          [? .//*[@class='recordsubcontent']//table//td
+            [ ./preceding-sibling::th[contains(.,'Database:')]]
+              :<id=substring-after(normalize-space(.), 'Erf.-Nr.: ')>]
+        ]
