@@ -38,10 +38,11 @@ To run the example, fire up a command line where you extracted/cloned this repos
 
 ```sh
 $ java -jar oxpath-2.0-cli.jar -query script/sowiport_solis_de.oxp -logfile VerboseLog4j.properties -browser firefox_xvfb -output output/sowiport_solis_de.xml -xml
+```
 
 *Hint:* If your system is localized to German language, use `sowiport_solis_de` version of the script. Else, use the `sowiport_solis_en` version.
 
-```
+
 ### With OXPath 2.0.2
 
 (will be released soon, more info to follow)
