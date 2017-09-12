@@ -1,6 +1,8 @@
 # Material for CLEF2017 Poster presentation / short paper
 
-This repository contains accompanying material to our short paper submitted and accepted at the CLEF2017 conference.
+This repository contains accompanying material to our short paper submitted and accepted at the [CLEF2017](http://clef2017.clef-initiative.eu/index.php) conference.
+
+You can find the paper in the official [CLEF2017 conference proceedings](https://link.springer.com/book/10.1007/978-3-319-65813-1), or at the [arXiv](https://arxiv.org/abs/1706.06836).
 
 ## Getting Started
 
@@ -28,14 +30,17 @@ Pick the latest version of the CLI jar and save it to a convenient location.
 
 To run the example, fire up a command line where you extracted/cloned this repository to, and input the following command, where
 
--   `-query script/sowiport_solis_de.oxp`: reads the OXPath expression in the file `sowiport_solis_de.oxp` in the `script` subfolder
+-   `-query script/sowiport_solis_en.oxp`: reads the OXPath expression in the file `sowiport_solis_en.oxp` in the `script` subfolder
 -   `-logfile VerboseLog4j.properties`: uses the provided custom logging configuration file for more verbose logging (recommended for OXPath beginners)
 -   `-browser firefox_xvfb`: runs the OXPath evaluation with a virtual frame buffer
--   `-output output/sowiport_solis_de.xml`: re-directs the XML output to the file `sowiport_solis_de.xml` in the subfolder `output`
+-   `-output output/sowiport_solis_en.xml`: re-directs the XML output to the file `sowiport_solis_en.xml` in the subfolder `output`
 -   `-xml`: sets the output format to XML
 
 ```sh
 $ java -jar oxpath-2.0-cli.jar -query script/sowiport_solis_de.oxp -logfile VerboseLog4j.properties -browser firefox_xvfb -output output/sowiport_solis_de.xml -xml
+
+*Hint:* If your system is localized to German language, use `sowiport_solis_de` version of the script. Else, use the `sowiport_solis_en` version.
+
 ```
 ### With OXPath 2.0.2
 
