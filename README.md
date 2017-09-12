@@ -2,7 +2,7 @@
 
 This repository contains accompanying material to our short paper submitted and accepted at the [CLEF2017](http://clef2017.clef-initiative.eu/index.php) conference.
 
-You can find the paper in the official [CLEF2017 conference proceedings](https://link.springer.com/book/10.1007/978-3-319-65813-1), or at the [arXiv](https://arxiv.org/abs/1706.06836).
+You can find the paper in the official [CLEF2017 conference proceedings](https://link.springer.com/chapter/10.1007/978-3-319-65813-1_16), or at the [arXiv](https://arxiv.org/abs/1706.06836).
 
 ## Getting Started
 
